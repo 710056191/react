@@ -1,0 +1,14 @@
+html,body{height:100%}
+@import './less.scss';
+
+#root,.container{@extend body;}
+.container{display:flex;flex-direction: column;}
+.container>.content{flex:1;overflow-y:auto;text-align: center}
+.am-tab-bar{height:50px;}
+
+.price span{color:#f00}
+.price span::before{content:'￥';}
+
+li{
+    list-style: none;
+}

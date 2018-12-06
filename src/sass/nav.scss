@@ -1,0 +1,79 @@
+@import './less.scss';
+h4,h2{
+    margin: rem(5);
+}
+.content{
+    background: #f0f0f2;
+    .nav-left{
+        background: #f0f0f0;
+        float: left;
+        position: fixed;
+        left: 0;
+        top:rem(45);
+        overflow-y: auto;
+        border-right: 1px solid #e0e0e0;
+        height: 100%;
+        ul{
+            li{
+                padding: rem(18) rem(11);
+                font-size: rem(16);
+            }
+        }
+    }
+    .nav-right{
+        position: inherit;
+        right: 0;
+        bottom: 0;
+        margin-left: rem(86);
+        left: rem(86);
+        padding:rem(10);
+        .nav-banner{
+            a{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .tuijian{
+            h4{
+                padding-top:rem(10);
+                font-size: rem(14);
+                text-align: left;
+            }
+            ul{
+                background: #fff;
+                display: flex;
+                li{
+                    flex: 1;
+                    padding:rem(10) rem(0);
+                    img{
+                        width: rem(63);
+                        height: rem(45);
+                    }
+                }
+            }
+        }
+        .nav-list{
+            h4{
+                padding-top:rem(10);
+                font-size: rem(14);
+                text-align: left;
+            }
+            ul{
+                background: #fff;
+                overflow: hidden;
+                li{
+                    width: rem(82.5);
+                    height: auto;
+                    float: left;
+                    padding: rem(5) rem(2) rem(5) rem(0);
+                    img{
+                        width: rem(64);
+                        height: rem(45);
+                    }
+                }
+            }
+        }
+    }
+}

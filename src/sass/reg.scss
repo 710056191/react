@@ -1,0 +1,23 @@
+@import './less.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.reg{
+    height: 100%;
+    width: 100%;
+    background: url('../imgs/720.png');
+    background-size: cover;
+    .main{
+        
+        width: 80%;
+        margin:0 auto;
+        padding-top: rem(30);
+        .main-tit{
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+            
+        }
+    }
+}

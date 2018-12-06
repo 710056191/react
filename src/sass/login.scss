@@ -1,0 +1,106 @@
+
+@import './less.scss';
+
+*{
+    margin: 0;
+}
+
+.login{
+    height: 100%;
+    background: url('../imgs/720.png');
+    background-size: cover;
+    .logo{
+        padding-top: rem(50);
+        img{
+            width: rem(75);
+            height: rem(75);
+        }
+    }
+    .input{
+        width: 80%;
+        margin: rem(35) auto;
+        background: #fff;
+        border-radius: rem(10);
+        form{
+            div{
+                padding: 3% 0;
+                text-align: left;
+            }
+            .user{
+                border-bottom: 1px solid #ccc;
+                label{
+                    margin-left: rem(15);
+                    width: 6%;
+                    i{
+
+                       img{
+                           vertical-align: middle;
+                           width: rem(18);
+                           height: rem(20.5);
+                       }
+                    }
+                }
+                input{
+                    border: none;
+                    text-align: left;
+                    padding-left: rem(20);
+                    line-height: rem(30);
+                    outline: none;
+                    vertical-align: middle;
+                }
+            }
+            .pass{
+                border-bottom: 1px solid #ccc;
+                label{
+                    margin-left: rem(15);
+                    width: 6%;
+                    overflow: hidden;
+                    height: auto;
+                    i{
+                        img{
+                            width: rem(18);
+                           height: rem(23.5);
+                           vertical-align: middle;
+                        }
+                    }
+                }
+                input{
+                    border: none;
+                    text-align: left;
+                    padding-left: rem(20);
+                    line-height: rem(30);
+                    outline: none;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .btn{
+        width: 80%;
+        margin: rem(35) auto;
+        background: #dd137b;
+        border-radius: rem(10);
+        height: rem(40);
+        p{
+            span{
+                color: #fff;
+                font-size: rem(16);
+                line-height: rem(40);
+            }
+        }
+    }
+    .footer{
+        width: 80%;
+        margin: rem(35) auto;
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                flex: 1;
+                a{
+                    font-size: rem(14);
+                }
+            }
+        }
+    }
+}
