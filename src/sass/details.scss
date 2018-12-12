@@ -1,0 +1,69 @@
+@import './less.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+#details{
+    width:100%;
+    text-align: left;
+#top{
+    display: flex;
+    justify-content: center;
+    div{
+        flex: 1;
+        text-align: center;
+        padding: rem(10) rem(0);
+    }
+}
+#main{
+    background: #fff;
+    ul{
+        li{
+            padding: rem(5) rem(0);
+            box-sizing: border-box;
+            overflow: hidden;
+            display: inline-block;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                font-size: rem(16);
+                text-align: left;
+                padding-left: rem(5);
+            }
+        }
+        li:nth-child(3),:nth-child(4){
+            width: 50%;
+            span{
+                padding-left: rem(5);
+            }
+        }
+        li:nth-child(5),:nth-child(6){
+            padding-left: rem(5);
+            width: 48%;
+            font-size: rem(14);
+        }
+        li:nth-child(7){
+            height: rem(50);
+            line-height: rem(40);
+            padding-left: rem(10);
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+    }
+}
+#xiangqing{
+    width: 100%;
+    margin-top: rem(10);
+    div{
+        width: 100%;
+        p{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+}

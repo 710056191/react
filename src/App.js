@@ -4,7 +4,8 @@ import {Switch,Route,withRouter,Redirect} from 'react-router-dom';
 import { TabBar } from 'antd-mobile';
 //引入ant-design-mobile的样式
 import 'antd-mobile/dist/antd-mobile.css'
-import './sass/page.scss'
+import './sass/page.scss';
+import axios from 'axios';
 
 import {Home} from './components/Home';
 import {Cart} from './components/Cart';
@@ -12,9 +13,10 @@ import {Nav} from './components/Nav';
 import {User} from './components/User';
 import {Header} from './components/common/Header';
 import {NotFound} from './components/pages/page';
+import {GoodsList} from './components/pages/GoodsList';
 import {Login} from './components/users/Login';
 import {Reg} from './components/users/Reg';
-
+import {CartHeader} from './components/common/CartHeader';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,6 +26,7 @@ import{
   faUser,
   faThLarge
 } from '@fortawesome/free-solid-svg-icons'
+import { Details } from './components/pages/Details';
 
 
 library.add(
@@ -32,6 +35,7 @@ library.add(
   faUser,
   faThLarge
 )
+// axios.defaults.baseURL = 'http://localhost:2000'
 
 class App extends Component {
   constructor(){
@@ -102,9 +106,10 @@ class App extends Component {
   }
   componentWillReceiveProps(isshow){
     let hash=window.location.hash.slice(1);
-    if(hash=='/login' || hash=='/reg'){
+    if(hash=='/login' || hash=='/reg' || hash=='/goodslist' || hash=='/details/:id'){
       isshow=false;
-    }else{
+    }
+    else{
       isshow=true;
     }
     this.setState({
@@ -115,15 +120,17 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        {this.state.isshow?<Header />:''}
+          {this.state.currentTab=='2'?<CartHeader />:<Header />}
         <div className="content">
           <Switch>
-            <Route path="/Home" component={Home} />
-            <Route path="/Nav" component={Nav} />
-            <Route path="/Cart" component={Cart} />
-            <Route path="/User" component={User} />
+            <Route path="/home" component={Home} />
+            <Route path="/nav" component={Nav} />
+            <Route path="/cart" component={Cart} />
+            <Route path="/user" component={User} />
             <Route path='/login' component={Login} />
+            <Route path='/details/:id' component={Details}/>
             <Route path='/reg' component={Reg} />
+            <Route path='/goodslist/:id' component={GoodsList} />
             <Route path='/404' component={NotFound} />
             <Redirect from="/" to="/home" exact />
             <Redirect to='/404'/>

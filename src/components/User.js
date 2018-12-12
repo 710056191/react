@@ -27,6 +27,11 @@ class User extends Component{
             <Route path='/login' component={Login} />
             <Route path='/reg' component={Reg} />
             </Switch>
+            <div className="user">
+                <div className="personal">
+                    你还没有登录哦！
+                </div>
+            </div>
         </div>
     }
 }

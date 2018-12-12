@@ -14,14 +14,22 @@ const host = process.env.HOST || '0.0.0.0';
 //代理服务器
 let myprox = {
   "/jjapi": {
-    "target": "https://wechat.qxiaow.com",
+    "target": "http://wechat.qxiaow.com",
     "changeOrigin": true,
-    "secure": false,
     "pathRewrite": {
       "^/jjapi" : "/"
     }
   }
 }
+// let myprox = {
+//   "/api":{
+//     "target":"https://wechat.qxiaow.com",
+//     "changeOrigin":true,
+//     "pathRewrite":{
+//       "^/api":"/"
+//     }
+//   }
+// }
 
 module.exports = function(proxy=myprox, allowedHost) {
   return {

@@ -5,4 +5,24 @@
     position: relative;
     z-index: 999;
     // background: blue;
+    ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: #f8f8f8;
+        border-bottom: 1px solid #ccc;
+        padding: 0 rem(10);
+        .cart{
+            flex: 8;
+            padding-left: rem(20);
+        }
+        .write{
+            flex: 2;
+        }
+        li{
+            text-align: center;
+            line-height: rem(45);
+            font-size: rem(18);
+        }
+    }
 }

@@ -10,14 +10,115 @@
     background: url('../imgs/720.png');
     background-size: cover;
     .main{
-        
         width: 80%;
         margin:0 auto;
         padding-top: rem(30);
         .main-tit{
             background: #fff;
             border-bottom: 1px solid #ccc;
-            
+        }
+        .main-vip{
+            width: 100%;
+            form{
+                width: 100%;
+            div{
+                width: 100%;
+                text-align: left;
+                padding: 3% 0;
+                border-bottom: 1px solid #ccc;
+                label{
+                    margin-left: rem(15);
+                    width: 6%;
+                    i{
+
+                       img{
+                           vertical-align: middle;
+                           width: rem(18);
+                           height: rem(20.5);
+                       }
+                    }
+                }
+                input{
+                    border: none;
+                    text-align: left;
+                    padding-left: rem(20);
+                    line-height: rem(30);
+                    outline: none;
+                    vertical-align: middle;
+                }
+            }
+            }
+        }
+        .main-putong{
+            width: 100%;
+            form{
+                width: 100%;
+            div{
+                width: 100%;
+                text-align: left;
+                padding: 3% 0;
+                border-bottom: 1px solid #ccc;
+                label{
+                    margin-left: rem(15);
+                    width: 6%;
+                    i{
+
+                       img{
+                           vertical-align: middle;
+                           width: rem(18);
+                           height: rem(20.5);
+                       }
+                    }
+                }
+                input{
+                    border: none;
+                    text-align: left;
+                    padding-left: rem(20);
+                    line-height: rem(30);
+                    outline: none;
+                    vertical-align: middle;
+                }
+            }
+            }
+        }
+        .footer{
+            width: 100%;
+            div{
+                margin: rem(20) 0 rem(0);
+                label{
+                    font-size: rem(14);
+                    text-align: left;
+                    width: 100%;
+                    input{
+                        width: rem(15);
+                        height: rem(15);
+                        background: #ddd;
+                        border: 1px solid #bbb;
+                        margin-right: rem(10);
+                    }
+                    i{
+                        color: #dd137b;
+                        font-size: rem(14);
+                        font-family: '黑体';
+                    }
+                }
+                input{
+                    width: 80%;
+                    background: #dd137b;
+                    color: #fff;
+                    text-align: center;
+                    height: rem(40);
+                    line-height: rem(40);
+                    font-size: rem(18);
+                    border: none;
+                    border-radius: rem(5);
+                }
+                div{
+                    text-align: right;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }

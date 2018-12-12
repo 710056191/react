@@ -1,0 +1,18 @@
+@import './less.scss';
+
+.cart{
+    ul{
+        display: flex;
+        justify-content: center;
+        .cart{
+            flex: 3;
+        }
+        .write{
+            flex: 1;
+        }
+        li{
+            text-align: center;
+            line-height: rem(45);
+        }
+    }
+}

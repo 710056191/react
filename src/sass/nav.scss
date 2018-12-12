@@ -17,6 +17,7 @@ h4,h2{
             li{
                 padding: rem(18) rem(11);
                 font-size: rem(16);
+                color: #303030;
             }
         }
     }
@@ -67,11 +68,12 @@ h4,h2{
                     width: rem(82.5);
                     height: auto;
                     float: left;
-                    padding: rem(5) rem(2) rem(5) rem(0);
+                    padding: rem(10) rem(2) rem(10) rem(5);
                     img{
                         width: rem(64);
-                        height: rem(45);
+                        height: rem(50);
                     }
+                    p{font-size: rem(13);color: #303030}
                 }
             }
         }

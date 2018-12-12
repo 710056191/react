@@ -8,6 +8,6 @@ export function NotFound(){
 
 export function HelpPage(){
     return <div>
-        你需要帮组忙
+        你需要帮忙
         </div>
 }

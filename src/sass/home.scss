@@ -34,6 +34,29 @@ ul{
         }
     }
 }
+.notice{
+    background: #fff;
+    height: rem(40);
+    overflow: hidden;
+    b{
+        float: left;
+        margin-right: rem(15);
+        color: #4d4d4d;
+        line-height: rem(40);
+    }
+    ul{
+       float: left; 
+        height: rem(40);
+        overflow: hidden;
+        li{
+            height: rem(40);
+            overflow: hidden;
+            line-height: rem(40);
+            color: #000;
+            font-family: '黑体'
+        }
+    }
+}
 .xianshi{
     margin: rem(10) rem(0);
     background: #fff;
@@ -67,7 +90,7 @@ ul{
     ul{
         width: 100%;
         padding: 0;
-        li{
+        a{
             height: rem(78);
             width: rem(124);
             border-bottom: 1px solid #ccc;
@@ -99,7 +122,10 @@ ul{
                     overflow: hidden;
                     white-space: nowrap;
                 }
-                
+                .nowprice{
+                    color: #dd157c;
+                    font-weight: bold;
+                }
                 img{
                     height: rem(176);
                     width: rem(176);
@@ -107,144 +133,6 @@ ul{
                 span{
                     flex: 1;
                     padding: rem(5) rem(0);
-                }
-            }
-        }
-    }
-}
-.msg{
-    .pro1{
-        background: #fff;
-        .pro1-top{
-            height: rem(261);
-            .pro1-top-lt{
-                border-right: 1px solid #ccc;
-                border-bottom: 1px solid #ccc;
-                padding: 0 rem(3);
-                height: 100%;
-                float: left;
-                li{
-                    padding-bottom: rem(10);
-                    p{
-                        text-align: center;
-                        margin-top: rem(40);
-                        font-size: rem(18);
-                    }
-                    a{
-                        padding-bottom: rem(20);
-                        img{
-                            width: rem(140);
-                            height: rem(140);
-                        }
-                    }
-                }
-            }
-            .pro1-top-rh{
-                float: right;
-                width: rem(228);
-                li{
-                    height: rem(130);
-                    border-bottom: 1px solid #ccc;
-                    display: flex;
-                    justify-content: space-between;
-                    p{
-                        display: flex;
-                        flex-direction: column;
-                        font-size: rem(14);
-                        padding-left: rem(10);
-                        span{
-                            padding: rem(5) rem(0);
-                            color: #db1579;
-                        }
-                    }
-                    a{
-                        margin-left: rem(30);
-                        img{
-                            width: rem(110);
-                            height: rem(110);
-                        }
-                    }
-                }
-            }
-        }
-        .pro1-fot{ 
-            background: #fff;
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            ul{
-                width: 24.7%;
-                float: left;
-                border-right: 1px solid #ccc;
-                height: auto;
-                li{
-                    text-align: left;
-                    p{
-                        padding:rem(7) rem(5) 0;
-                        font-size: rem(14);
-                        text-align: left;
-                    }
-                    span{
-                        padding:rem(7) rem(5);
-                        font-size: rem(12);
-                        text-align: left;
-                        color: #db1579;
-                    }
-                }
-                a{
-                    img{
-                        width: rem(88);
-                        height: rem(88);
-                    }
-                }
-            }
-        }
-    }
-    .pro2{
-        margin-top: rem(20);
-        background: #fff;
-        overflow: hidden;
-        .pro2-top{
-            border-bottom: 1px solid #ccc;
-            display: flex;
-            ul{
-                flex: 1;
-                li{
-                    p{
-                        font-size: rem(14);
-                        text-align: left;
-                    }
-                }
-                a{
-                    img{
-                        width: rem(110);
-                        height: rem(110);
-                    }
-                }
-            }
-        }
-        .pro2-fot{
-            overflow: hidden;
-            ul{
-                width: 50%;
-                float: left;
-                li{
-                    float: left;
-                    width: 40%;
-                    padding-left: rem(5);
-                    p{
-                        text-align: left;
-                        font-size: rem(14);
-                    }
-                }
-                a{
-                    float: left;
-                    width: rem(100);
-                    height:rem(100);
-                    img{
-                        width: rem(100);
-                        height:rem(100);
-                    }
                 }
             }
         }

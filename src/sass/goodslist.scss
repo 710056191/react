@@ -1,0 +1,52 @@
+@import './less.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.goodslist{
+    height: 100%;
+    overflow: auto;
+    .box{
+        width: rem(176);
+        margin: rem(5) rem(3.75);
+        float: left;
+        background: #fff;
+        position: relative;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        a{
+            img{
+                height: rem(176);
+                width: rem(176);
+                text-align: center;
+                vertical-align: middle;
+            }
+            p{
+                overflow: hidden;
+                font-size: rem(14);
+                padding-left:rem(5);
+                white-space: nowrap;
+                height: rem(25);
+                line-height: rem(25);
+                font-size: rem(12);
+            }
+            small{
+                height: rem(25);
+                line-height: rem(25);
+                font-size: rem(15);
+                font-weight: bold;
+                color: #dd137b;
+                text-align: left;
+            }
+        }
+        div{
+            position: absolute;
+            bottom: rem(5);
+            right: rem(5);
+            font-size: rem(12);
+        }
+    }
+}
